@@ -134,14 +134,14 @@ console.log(lambdaStudentThree.stomach);
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
     
-    1. 
+    1. Window Binding - "this" refers to the window by default.
 
-    2. 
+    2. Implicit Binding - "this" refers to whatever is left of the dot when a function is invoked.
 
-    3. 
+    3. Explicit Binding - "this" refers to whatever it is explicitly assigned to using the .call, .apply, or .bind methods and passing arguments into them.
 
-    4. 
-    
+    4. New Binding - "this" refers to the new object when a constructor function is invoked.
+
   */
   
   
