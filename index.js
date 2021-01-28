@@ -120,7 +120,8 @@ console.log(lambdaStudentThree.stomach);
   };
   const junker = new Car('Grand Prix', 20);
   junker.fill(60);
-  junker.drive(260);
+  junker.drive(40);
+  junker.drive(270);
   
   /*
     TASK 3
