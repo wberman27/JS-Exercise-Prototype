@@ -102,9 +102,25 @@ console.log(lambdaStudentThree.stomach);
     this.odometer = 0;
   }
   Car.prototype.fill = function(gallon){
-      this.tank += gallon;
+      this.tank = this.tank + gallon;
+      console.log(this.tank);
   }
-  
+  Car.prototype.drive = function(distance){
+    const availableMiles = this.tank * this.milesPerGallon
+    if(availableMiles < distance){
+      this.odometer = this.odometer - (distance - availableMiles);
+      console.log(`I ran out of fuel at ${this.odometer} miles!`);
+      return `I ran out of fuel at ${this.odometer} miles!`;
+    }
+    else{
+      this.odometer += distance;
+      console.log(this.tank = this.tank - (distance/this.milesPerGallon));
+      return this.tank = this.tank - (distance/this.milesPerGallon);
+    };
+  };
+  const junker = new Car('Grand Prix', 20);
+  junker.fill(60);
+  junker.drive(260);
   
   /*
     TASK 3
